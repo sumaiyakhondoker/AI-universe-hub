@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a9d03710c7.js" crossorigin="anonymous"></script>
+
+    <!-- daisy UI and tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    
+</head>
+<body>
+    <header class="text-center mt-12 mb-2">
+   
+            <h1 class="text-4xl font-medium">AI Universe Hub</h1>
+        <div class="mt-5">
+            <button title="To see the AI's please click the AI button" onclick="handleSortByDate()" class="btn bg-red-600 text-white px-5">Artificial Intelligence</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto ">
+        <section class="my-6">
+          <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            
+            
+          </div>
+        </section>
+        <div class="flex justify-center my-6">
+          <button onclick="handleSeeMore()" id="see-more-btn" class="btn bg-red-600 text-white px-5 hidden">See More</button>
+        </div>
+
+
+
+
+
+<!-- modal -->
+ <!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="show_details_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+
+    <!-- close btn -->
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn absolute -right-0 -top-0 bg-red-500 text-white rounded-2xl ">X</button>
+      </form>
+    </div>
+    
+    <!-- details container -->
+    <div id="details-container" class="">
+
+    </div>
+
+    
+  </div>
+</dialog>
+
+
+
+
+    </main>
+
+    <footer>
+
+
+     
+    </footer>
+
+              
+
+    <script src="js/ai.js"></script>
+</body>
+</html>
